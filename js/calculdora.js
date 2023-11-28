@@ -151,7 +151,7 @@ btnCalcularMonoNoControlIdeal.addEventListener("click", function(){
             }else {
                 showTagBlock(divResultados);
                 showTagFlex(divApareceResultado);
-                divApareceResultado.innerHTML = "<div class='resultado-size'><p class='p-height'>V<sub>LM</sub>&ensp;= <math><mfrac><mi>V<sub>LP</sub></mi><mi>&pi;</mi></mfrac></math>&ensp;= " + vlm2.toFixed(3).replace(".", ",") + "</p><p class='p-height'>V<sub>LP</sub>&ensp;= V<sub>2P</sub>&ensp;= " + parseFloat(v2p2).toFixed(3).replace(".", ",") + "</p><p class='p-height'>R<sub>L</sub>&ensp;= <math><mfrac><mi>V<sub>LP</sub></mi><mi>I<sub>LP</sub></mi></mfrac></math>&ensp;= "  + rl2.toFixed(3).replace(".", ",") + "</p><<p class='p-height'>I<sub>LM</sub>&ensp;= <math><mfrac><mi>V<sub>LM</sub></mi><mi>R<sub>L</sub></mi></mfrac></math>&ensp;= " + ilm5.toFixed(3).replace(".", ",") + "</p></div>";
+                divApareceResultado.innerHTML = "<div class='resultado-size'><p class='p-height'>V<sub>LM</sub>&ensp;= <math><mfrac><mi>V<sub>LP</sub></mi><mi>&pi;</mi></mfrac></math>&ensp;= " + vlm2.toFixed(3).replace(".", ",") + "</p><p class='p-height'>V<sub>LP</sub>&ensp;= V<sub>2P</sub>&ensp;= " + parseFloat(v2p2).toFixed(3).replace(".", ",") + "</p><p class='p-height'>R<sub>L</sub>&ensp;= <math><mfrac><mi>V<sub>LP</sub></mi><mi>I<sub>LP</sub></mi></mfrac></math>&ensp;= "  + rl2.toFixed(3).replace(".", ",") + "</p><p class='p-height'>I<sub>LM</sub>&ensp;= <math><mfrac><mi>V<sub>LM</sub></mi><mi>R<sub>L</sub></mi></mfrac></math>&ensp;= " + ilm5.toFixed(3).replace(".", ",") + "</p></div>";
             }
         } else if (checkIlm.checked){
             if (checkRl.checked && rl != parseFloat(rl3.toFixed(3))){
