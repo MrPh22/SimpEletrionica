@@ -1,0 +1,146 @@
+/* Folha de Estilização padrão para todas as páginas do site */
+/* Declaração de variáveis de propriedades usadas nos elementos de todo o site */
+:root {
+    --texto-branco: #FFFFFF;
+    --texto-preto: #000000;
+    --texto-azul: #9BD8FB;
+    --texto-verde: #206737;
+
+    --borda-tituloPrincial: #6E93CB;
+    --borda-search: #6A6A6A;
+
+    --btn-site: #9BD8FB;
+    --btn-verTodos: #BAE6C8;
+    --btn-calcular: #BAE6C8;
+
+    --borda-btn-verTodos: #5DA674;
+    --borda-btn-calcular: #5DA674;
+    --borda-barra: #6A6A6A;
+    --borda-preto: #000000;
+
+    --bg-btnSite: #206737;
+    --bg-main: #D1F8FF;
+    --bg-cardPage: #5DA674;
+    --bg-footer: #206737;
+    --bg-search: #FFFFFF;
+
+    --hover-btnSite: #2FB4FF;
+
+    --font-titulos: 'Source Code Pro', monospace;
+    --font-textos: 'Source Code Pro', monospace;
+    --font-footer: 'Source Code Pro', monospace;
+}
+
+/* Definição de medidas do corpo do site */
+header {
+    height: 15.25rem;
+}
+
+footer {
+    height: 6.3125rem;
+}
+
+/* Estilização do cabeçalho */
+.container-cabecalho {
+    background: url(../img/pag-inicial/fundo-cabecalho-02.jpg);
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-principal {
+    height: 11.875rem;
+
+    color: var(--texto-branco);
+
+    font-family: var(--font-titulos);
+    font-weight: 800;
+    font-size: 3rem;
+    letter-spacing: 0.76rem;
+
+    text-shadow: #6E93CB -4px 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-btns {
+    height: 3.375rem;
+
+    background-color: var(--bg-btnSite);
+
+    display: flex;
+    justify-content: center;
+}
+
+.nav-btn {
+    max-width: 1024px;
+}
+
+.list-btn {
+    height: 3.375rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.item-btn {
+    text-align: center;
+
+    font-family: var(--font-titulos);
+    font-weight: 800;
+}
+
+.btn-site {
+    text-decoration: none;
+
+    color: var(--btn-site);
+}
+
+.btn-site:visited {
+    color: var(--btn-site);
+}
+
+.btn-site:hover {
+    color: var(--hover-btnSite);
+}
+
+/* Estilização do conteúdo do site */
+.container-main {
+    background-color: var(--bg-main);
+
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo {
+    width: 64rem;
+    max-width: 64rem;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilização do rodapé */
+.rodape {
+    background-color: var(--bg-footer);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--font-footer);
+    font-weight: 700;
+    font-size: 1.25rem;
+    font-style: italic;
+    letter-spacing: 0.12rem;
+}
+
+.copy {
+    font-size: 1.75rem;
+}
