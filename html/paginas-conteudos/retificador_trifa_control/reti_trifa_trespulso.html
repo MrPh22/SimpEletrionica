@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retificadores Trifásicos Controlados</title>
+    <link rel="stylesheet" href="../../../css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/pagina-conteudos/conteudo.css">
+    <link rel="stylesheet" href="../../../css/pagina-conteudos/conteudo-responsivo.css">
+</head>
+<body>
+    <header class="container-cabecalho">
+        <section class="cabecalho">
+            <div class="container-cabecalho">
+                <h1 class="titulo-principal">Simplesmente Eletrônica</h1>
+            </div>
+            <div class="container-btns">
+                <nav class="nav-btn">
+                    <ul class="list-btn">
+                        <li class="item-btn"><a href="../../../index.html" class="btn-site">Página Inicial</a></li>
+                        <li class="item-btn"><a href="../../calculadora.html" class="btn-site">Calculadora</a></li>
+                        <li class="item-btn"><a href="./reti_trifa_seispulsos.html" class="btn-site">Próximo Retificador</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main class="container-main">
+        <section class="conteudo">
+            <div class="container-search"></div>
+            <div class="container-pages">
+                <div class="page">
+                    <div class="base-conteudo">
+                        <h2 class="text-conteudo-title">Retificadores Trifásicos Controlados</h2>
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Retificadores trifásicos controlados são amplamente utilizados em sistemas de alta potência, pois sua capacidade de saída DC é superior à dos retificadores monofásicos, apresentando uma menor variação na ondulação AC.
+                        </p>
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Esse tipo de circuito é denominado como três-pulsos, pois a pulsação da tensão DC é três vezes a frequência de entrada. Cada SCR recebe um pulso de disparo relativo no tempo à própria tensão de fase. Os três pulsos na porta de disparo são defasados em 120° entre si e resultam no mesmo ângulo de retardo para cada SCR.
+                        </p>
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;As formas de onda das tensões de fase Van, Vbn e Vcn são mostradas na figura abaixo.
+                        </p>
+                        <img src="../../../img/pag-inicial/reti_trifa-control/Trif-control1.png" class="img-text" alt="Retificadores Trifásicos Controlados">
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Similar ao funcionamento do retificador de meia onda, nos semiciclos positivos das tensões V1 e V2a, o diodo (D1) entra em condução. Contudo, o segundo diodo (D2) permanece não condutor devido à sua polarização inversa. Essa característica destaca a importância do controle da polarização para o adequado funcionamento do circuito.
+                        </p>
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Durante o intervalo de wt = 30° a 150°, a tensão mais positiva é Van. Portanto, SCR1 estará diretamente polarizado e conduzirá quando acionado, enquanto os outros dois estarão inversamente polarizados e conduzirão quando forem acionados, enquanto os dois SCRs restantes ficarão inversamente polarizados. SCR1 continuará a conduzir até wt = 150°, momento em que a tensão Vbn começa a se tornar mais positiva do que Van. SCR2 agora ficará diretamente polarizado e passará para o estado ligado se for aplicado um sinal de disparo. Quando SCR2 ficar ativo, o SCR1 entrará em estado desligado de maneira natural, e o ciclo se repetirá com Vcn.
+                        </p>
+                        <img src="../../../img/pag-inicial/reti_trifa-control/Trif-control2.png" class="img-text" alt="Retificadores Trifásicos Controlados">
+                       <p></p>
+                        <img src="../../../img/pag-inicial/reti_trifa-control/Trif-control3.png" class="img-text" alt="Retificadores Trifásicos Controlados">
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Todos os SCRs bloqueiam a tensão inversa da fonte; portanto, se o SCR estiver ligado, conectará o terminal de tensão de entrada ao terminal de saída, o que faz a tensão de saída ser igual à tensão AC. As formas de onda de onda da tensão de saída são compostas pela parte da tensão de entrada AC.
+                        </p>
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;O ângulo de condução em (alpha) é determinado pelos cruzamentos das fases de tensão, e não pelo cruzamento com zero das ondas. O SCR da fase A permanece conduzindo até que os dispositivos da fase B passem para o estado ligado. A tensão e a corrente não se anulam, porém ocorre uma diminuição na tensão de saída média.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p class="text-footer"><span class="copy">&copy;</span> Simplesmente Eletrônica</p>
+    </footer>
+</body>
+</html>

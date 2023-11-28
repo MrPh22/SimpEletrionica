@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retificador Controlado por Fase</title>
+    <link rel="stylesheet" href="../../../css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/pagina-conteudos/conteudo.css">
+    <link rel="stylesheet" href="../../../css/pagina-conteudos/conteudo-responsivo.css">
+</head>
+<body>
+    <header class="container-cabecalho">
+        <section class="cabecalho">
+            <div class="container-cabecalho">
+                <h1 class="titulo-principal">Simplesmente Eletrônica</h1>
+            </div>
+            <div class="container-btns">
+                <nav class="nav-btn">
+                    <ul class="list-btn">
+                        <li class="item-btn"><a href="../../../index.html" class="btn-site">Página Inicial</a></li>
+                        <li class="item-btn"><a href="../../calculadora.html" class="btn-site">Calculadora</a></li>
+                        <li class="item-btn"><a href="./reti_control_ct.html" class="btn-site">Próximo Retificador</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main class="container-main">
+        <section class="conteudo">
+            <div class="container-search"></div>
+            <div class="container-pages">
+                <div class="page">
+                    <div class="base-conteudo">
+                        <h2 class="text-conteudo-title">Retificador Controlado por Fase</h2>
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Para projetar um "retificador controlado" ou "retificador controlado por fase", é necessário substituir os diodos usados nos retificadores anteriores por SCRs (retificadores controlados de silício), pois esse circuito possibilita o controle da amplitude da fase, bem como o controle do período de condução, da polaridade da tensão e da direção da corrente. Essa capacidade de controle torna esses retificadores particularmente valiosos em aplicações onde é essencial gerenciar com precisão a energia e a direção do fluxo de corrente.
+                        </p>
+                        <img src="../../../img/pag-inicial/reti_mono-control/Reti-control-meia_onda1.png" class="img-text" alt="Retificador Controlado por Fase">
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Durante o semiciclo positivo da tensão de alimentação, o SCR estará diretamente polarizado e conduzirá se um pulso de acionamento for aplicado à porta. Se o SCR entrar no estado ligado em (T0), uma corrente fluirá na carga e a tensão de saída (v0) será igual à tensão de entrada. Essa condição estabelece a condução efetiva do SCR, permitindo o fluxo controlado de corrente e mantendo uma correspondência entre as tensões de entrada e saída.
+                        </p>
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Durante o semiciclo negativo, o dispositivo bloqueará o fluxo de corrente e não haverá tensão na carga. O SCR permanecerá inativo até que o sinal seja novamente aplicado à porta em (t0 + 2π).
+                        </p>
+                        <img src="../../../img/pag-inicial/reti_mono-control/Reti-control-meia_onda2.png" class="img-text" alt="Retificador Controlado por Fase">
+                        <img src="../../../img/pag-inicial/reti_mono-control/Reti-control-meia_onda3.png" class="img-text" alt="Retificador Controlado por Fase">
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Um retificador de meia-onda com carga composta por R (resistor) e L (indutor). Se o SCR for adicionado com um ângulo de disparo igual a (alpha), a corrente na carga aumentará gradualmente, pois a indutância causará um atraso na corrente em relação à tensão. O indutor armazenará energia em seu campo magnético. Quando a tensão aplicada no sistema se tornar negativa, o SCR ficará inversamente polarizado. No entanto, o campo magnético do indutor manterá a corrente contínua até que o SCR entre no estado desligado. Nesse momento, a tensão do indutor mudará de polaridade para negativa. Isso resultará em uma média de tensão de saída menor em comparação com o caso em que há apenas uma resistência pura.
+                        </p>
+                        <img src="../../../img/pag-inicial/reti_mono-control/Reti-control-meia_onda4.png" class="img-text" alt="Retificador Controlado por Fase">
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Para cortar a porção negativa da tensão de saída instantânea e suavizar a ondulação da corrente de saída, utiliza-se um diodo de retorno. Quando a tensão na carga tende à inversão, o FWD fica diretamente polarizado entrando no estado ligado, enquanto o SCR vai para o estado desligado devido à polarização inversa. Isso direciona a corrente que antes passava pelo SCR para fluir pelo diodo de retorno. Essa adição faz com que haja continuidade da corrente no sistema, graças à energia armazenada no indutor, resultando em uma tensão de saída equivalente ao sistema com carga puramente resistiva.
+                        </p>
+                        <img src="../../../img/pag-inicial/reti_mono-control/Reti-control-meia_onda5.png" class="img-text" alt="Retificador Controlado por Fase">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p class="text-footer"><span class="copy">&copy;</span> Simplesmente Eletrônica</p>
+    </footer>
+</body>
+</html>

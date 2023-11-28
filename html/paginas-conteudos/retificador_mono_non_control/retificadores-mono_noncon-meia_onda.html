@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retificador Meia Onda</title>
+    <link rel="stylesheet" href="../../../css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/pagina-conteudos/conteudo.css">
+    <link rel="stylesheet" href="../../../css/pagina-conteudos/conteudo-responsivo.css">
+</head>
+<body>
+    <header class="container-cabecalho">
+        <section class="cabecalho">
+            <div class="container-cabecalho">
+                <h1 class="titulo-principal">Simplesmente Eletrônica</h1>
+            </div>
+            <div class="container-btns">
+                <nav class="nav-btn">
+                    <ul class="list-btn">
+                        <li class="item-btn"><a href="../../../index.html" class="btn-site">Página Inicial</a></li>
+                        <li class="item-btn"><a href="../../calculadora.html" class="btn-site">Calculadora</a></li>
+                        <li class="item-btn"><a href="./retificadores-mono_noncon-onda-ct.html" class="btn-site">Proximo Retificador</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main class="container-main">
+        <section class="conteudo">
+            <div class="container-pages">
+                <div class="page">
+                    <div class="base-conteudo">
+                        <h2 class="text-conteudo-title">Retificador Meia Onda</h2>
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;O retificador tem como objetivo cortar uma parcela do sinal de entrada do sistema, garantindo que sua média não seja zero e, assim, melhorando a eficiência energética da máquina. O retificador de meia onda é notavelmente o mais simples da categoria, sendo implementado apenas com a utilização de um diodo alimentado com uma tensão de carga. Este diodo, ao ser alimentado corretamente, realiza a retificação no resistor de carga, como ilustrado na figura abaixo.
+                        </p>
+                        <img src="../../../img/pag-inicial/reti_non-control/Retificador mono CT.png" class="img-text" alt="Retificador Mono de Meia onda Não controlado">
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;O desempenho de um diodo se caracteriza por momentos nos quais as tensões são conduzidas e interrompidas, sendo esse processo determinado pela polarização do diodo. Quando um diodo é polarizado com o lado negativo da fonte conectado ao seu polo negativo, ele entra em condução; por outro lado, se a polarização negativa da fonte estiver voltada para o lado positivo do diodo, ele não conduz. Esse comportamento é fundamental para o correto funcionamento do diodo e é essencial compreendê-lo ao projetar e analisar circuitos.
+                        </p>
+                        <div class="img-text">
+                            <img src="../../../img/pag-inicial/reti_non-control/img2meia-onda.png" alt="Retificador Mono de Meia onda Não controlado">
+                            <img src="../../../img/pag-inicial/reti_non-control/img3meia-onda.png" alt="Retificador Mono de Meia onda Não controlado">
+                        </div>
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Uma Observação importante sobre os diodos, são tensão aplicada no sistema for menor que tensão de funcionamento do diodo, o diodo também não conduzirá até que a Tensão mínima seja alcançada.
+                        </p>
+                        <img src="../../../img/pag-inicial/reti_non-control/img4meia-onda.png" class="img-text" alt="Retificador Mono de Meia onda Não controlado">
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Com base nisso, o retificador de meia onda opera completamente integrado ao sistema principal do diodo. Durante os semiciclos positivos, o diodo (D1) recebe a polarização de tensão (V2) diretamente da carga, o que viabiliza a condução da tensão. Esse processo é fundamental para o funcionamento adequado do retificador, permitindo a passagem de corrente nos momentos apropriados do ciclo de alimentação e contribuindo para a retificação eficiente do sinal. Essa interação entre a polarização do diodo e a polarização da carga é essencial para compreender o comportamento do retificador de meia onda.
+                        </p>
+                        <img src="../../../img/pag-inicial/reti_non-control/img5meia-onda.png" class="img-text" alt="Retificador Mono de Meia onda Não controlado">
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Em seu modelo quase ideal, há uma perda de 0,7 volts devido à tensão mínima de condução do diodo.
+                        </p>
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Durante o semiciclo negativo, o diodo (D1) é inversamente polarizado pela tensão (V2) da carga, tornando-se, essencialmente, uma chave aberta para o sistema. Nesse cenário, o diodo bloqueia a corrente, impedindo a passagem da tensão negativa para o restante do circuito. Essa característica é crucial para a função de retificação do retificador de meia onda, assegurando que apenas os semiciclos positivos sejam conduzidos, contribuindo para a obtenção de uma saída de corrente unidirecional desejada.
+                        </p>
+                        <img src="../../../img/pag-inicial/reti_non-control/img6meia-onda.png" class="img-text" alt="Retificador Mono de Meia onda Não controlado">
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Observação importante: mesmo após a retificação, a tensão de carga mantém uma frequência idêntica à do transformador de carga. Essa característica ressalta a capacidade do retificador de meia onda em preservar a frequência original proveniente do transformador. Dessa forma, o sistema retificado continua a refletir a natureza da fonte de alimentação, proporcionando uma saída com a mesma frequência do transformador de carga. Essa consistência na frequência é fundamental para garantir a integridade e a sincronia das operações no circuito.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p class="text-footer"><span class="copy">&copy;</span> Simplesmente Eletrônica</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retificador Monofásico Controlado com Terminal Central</title>
+    <link rel="stylesheet" href="../../../css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/pagina-conteudos/conteudo.css">
+    <link rel="stylesheet" href="../../../css/pagina-conteudos/conteudo-responsivo.css">
+</head>
+<body>
+    <header class="container-cabecalho">
+        <section class="cabecalho">
+            <div class="container-cabecalho">
+                <h1 class="titulo-principal">Simplesmente Eletrônica</h1>
+            </div>
+            <div class="container-btns">
+                <nav class="nav-btn">
+                    <ul class="list-btn">
+                        <li class="item-btn"><a href="../../../index.html" class="btn-site">Página Inicial</a></li>
+                        <li class="item-btn"><a href="../../calculadora.html" class="btn-site">Calculadora</a></li>
+                        <li class="item-btn"><a href="./reti_control_ponte.html" class="btn-site">Próximo Retificador</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main class="container-main">
+        <section class="conteudo">
+            <div class="container-search"></div>
+            <div class="container-pages">
+                <div class="page">
+                    <div class="base-conteudo">
+                        <h2 class="text-conteudo-title">Retificador Monofásico Controlado com Terminal Central</h2>
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Um retificador monofásico controlado com terminal central e carga resistiva possui controle de fase tanto na parte positiva quanto na negativa da alimentação AC, o que resulta no aumento da tensão DC e na redução da ondulação quando comparado ao retificador de meia onda.
+                        </p>
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Durante o semiciclo positivo da tensão de entrada, SCR1 fica diretamente polarizado. Se um sinal for aplicado à porta (alpha), SCR1 entrará no estado ligado. A corrente na carga (i0 = v0/R) assume a mesma forma de onda da tensão na carga. Quando a corrente se tornar nula (pi), o SCR irá desligar naturalmente.
+                        </p>
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Durante o semiciclo negativo, o SCR2 ficará diretamente polarizado, com isso a Tensão de saída e a corrente voltam a fluir pelo sistema, até que a corrente chegue a zero (2pi), repetindo o ciclo.
+                        </p>
+                        <img src="../../../img/pag-inicial/reti_mono-control/Reti-control-DerivaçãoCentral1.png" class="img-text" alt="Retificador Monofásico Controlado com Terminal Central">
+                        <img src="../../../img/pag-inicial/reti_mono-control/Reti-control-DerivaçãoCentral2.png" class="img-text" alt="Retificador Monofásico Controlado com Terminal Central">
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Com carga indutiva, ao considerar uma carga indutiva elevada, na qual a corrente é contínua (um cenário sempre presente), o SCR1 conduz durante 180°, de (alpha) a (pi + alpha), fazendo com que a tensão na carga siga a tensão de entrada. Ao término do ciclo do SCR1, SCR2 é acionado, desativando o SCR1 e tornando-se condutor durante 180° de (pi + alpha) a (2pi + alpha).
+                        </p>
+                        <img src="../../../img/pag-inicial/reti_mono-control/Reti-control-DerivaçãoCentral3.png" class="img-text" alt="Retificador Monofásico Controlado com Terminal Central">
+                        <img src="../../../img/pag-inicial/reti_mono-control/Reti-control-DerivaçãoCentral4.png" class="img-text" alt="Retificador Monofásico Controlado com Terminal Central">
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Um diodo de retorno, conectado em paralelo com carga indutiva, altera as formas de onda de tensão e corrente da figura abaixo. Quando a tensão na carga tende a ser negativa, o FWD fica diretamente polarizado e inicia a condução. Dessa forma, a tensão na carga fica grampeada a zero volts. A corrente quase constante na carga é mantida pela corrente de retorno que passa através do diodo de retorno.
+                        </p>
+                        <img src="../../../img/pag-inicial/reti_mono-control/Reti-control-DerivaçãoCentral5.png" class="img-text" alt="Retificador Monofásico Controlado com Terminal Central">
+                        <img src="../../../img/pag-inicial/reti_mono-control/Reti-control-DerivaçãoCentral6.png" class="img-text" alt="Retificador Monofásico Controlado com Terminal Central">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p class="text-footer"><span class="copy">&copy;</span> Simplesmente Eletrônica</p>
+    </footer>
+</body>
+</html>

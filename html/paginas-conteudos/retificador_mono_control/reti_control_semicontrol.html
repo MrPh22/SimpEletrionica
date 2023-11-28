@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retificador em Ponte - Um Quadrante</title>
+    <link rel="stylesheet" href="../../../css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/pagina-conteudos/conteudo.css">
+    <link rel="stylesheet" href="../../../css/pagina-conteudos/conteudo-responsivo.css">
+</head>
+<body>
+    <header class="container-cabecalho">
+        <section class="cabecalho">
+            <div class="container-cabecalho">
+                <h1 class="titulo-principal">Simplesmente Eletrônica</h1>
+            </div>
+            <div class="container-btns">
+                <nav class="nav-btn">
+                    <ul class="list-btn">
+                        <li class="item-btn"><a href="../../../index.html" class="btn-site">Página Inicial</a></li>
+                        <li class="item-btn"><a href="../../calculadora.html" class="btn-site">Calculadora</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main class="container-main">
+        <section class="conteudo">
+            <div class="container-search"></div>
+            <div class="container-pages">
+                <div class="page">
+                    <div class="base-conteudo">
+                        <h2 class="text-conteudo-title">Retificador em Ponte - Um Quadrante</h2>
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Aplicações que demandam fluxo de potência apenas da fonte AC para a carga DC são operadas apenas na forma de retificação. Isso é alcançado em retificadores em ponte quando se substituem metade dos SCRs por diodos, sendo esses circuitos denominados como retificadores em ponte de 'um-quadrante' ou 'semicontrolados'.
+                        </p>
+                        <img src="../../../img/pag-inicial/reti_mono-control/semicontrol-em-ponte2.png" class="img-text" alt="Retificador em Ponte - Um Quadrante">
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Um método alternativo para obter a operação de um quadrante em retificadores em ponte é conectar um diodo de retorno nos terminais de saída do retificador. Seu funcionamento é semelhante ao retificador controlado de ponte, onde, se SCR1 e D4 estão diretamente polarizados positivamente, o SCR2 e D3 estarão desligados; ao inverter a polarização, SCR2 e D3 passam a conduzir.
+                        </p>
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Com uma carga indutiva, ocorre uma comutação a cada semiciclo para fazer com que a corrente da carga conduza pelo diodo. A corrente passa por SCR1 e D3 na metade do ciclo e depois por SCR2 e D4, finalizando o ciclo.
+                        </p>
+                        <img src="../../../img/pag-inicial/reti_mono-control/semicontrol-em-ponte2.png" class="img-text" alt="Retificador em Ponte - Um Quadrante">
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Isso resulta na parte negativa da tensão de saída ficando desligada, produzindo uma forma de onda de tensão de saída idêntica à da carga, comportando-se como se fosse resistiva pura.
+                        </p>
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Se o circuito da imagem acima tiver uma carga altamente indutiva, a corrente na carga fluirá durante todo o semiciclo negativo, podendo perder o controle. Quando um diodo de retorno é utilizado, o FWD (diodo de avanço) fica diretamente polarizado, conduzindo à medida que a tensão de carga se inverte, permitindo que a corrente passe pelo FWD.
+                        </p>
+                        <img src="../../../img/pag-inicial/reti_mono-control/semicontrol-em-ponte3.png" class="img-text" alt="Retificador em Ponte - Um Quadrante">
+                        <img src="../../../img/pag-inicial/reti_mono-control/semicontrol-em-ponte4.png" class="img-text" alt="Retificador em Ponte - Um Quadrante">
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;O FWD manterá as operações limitadas a zero quando a tensão for negativa no Sistema.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p class="text-footer"><span class="copy">&copy;</span> Simplesmente Eletrônica</p>
+    </footer>
+</body>
+</html>

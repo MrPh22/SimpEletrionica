@@ -1,0 +1,104 @@
+/* Definição da largura dos botões do cabeçalho */
+.item-btn {
+    width: 512px;
+}
+
+/* Estilização do conteúdo da página principal*/
+.conteudo {
+    margin-top: 1rem;
+}
+
+/* Estilização dos botões "cards" que levam para outras páginas*/
+.container-pages {
+    display: flex;
+    flex-direction: column;
+    
+    max-width: 64rem;
+}
+
+.page {
+    margin: 2rem;
+}
+
+.card-page {
+    text-decoration: none;
+
+    width: 55.4375rem;
+    height: 12rem;
+
+    display: flex;
+
+    color: var(--texto-branco);
+    background-color: var(--bg-cardPage);
+
+    border-radius: 1.9375rem;
+    box-shadow: -10px 10px 6.2px 0px rgba(0, 0, 0, 0.67);
+}
+
+.img-card {
+    height: 12rem;
+    width: 21.37rem;
+
+    border-radius: 1.9375rem;
+    box-shadow: -10px 10px 6.2px 0px rgba(0, 0, 0, 0.67);
+}
+
+.text-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo-card-page {
+    font-family: var(--font-titulos);
+    font-weight: 800;
+    font-size: 1.25rem;
+    text-align: center;
+
+    width: 32.875rem;
+    height: 2.1875rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-card-page {
+    font-family: var(--font-textos);
+    font-weight: 400;
+    font-size: 0.875rem;
+    text-align: justify;
+
+    width: 30rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 1rem;
+}
+
+/* Estilização do botão que leva para a página com todos os materias que o site oferece */
+.btn-page-conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 21.33313rem;
+    height: 3.375rem;
+
+    background-color: var(--btn-verTodos);
+
+    border-radius: 1.6875rem;
+    border: 4px solid var(--borda-btn-verTodos);
+
+    font-family: var(--font-titulos);
+    font-weight: 800;
+    font-size: 1.25rem;
+
+    text-decoration: none;
+    color: var(--texto-preto);
+
+    margin: 2rem;
+}
+

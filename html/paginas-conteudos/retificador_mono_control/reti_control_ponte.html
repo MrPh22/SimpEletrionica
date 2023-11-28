@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retificador de Onda Completa em Ponte</title>
+    <link rel="stylesheet" href="../../../css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/pagina-conteudos/conteudo.css">
+    <link rel="stylesheet" href="../../../css/pagina-conteudos/conteudo-responsivo.css">
+</head>
+<body>
+    <header class="container-cabecalho">
+        <section class="cabecalho">
+            <div class="container-cabecalho">
+                <h1 class="titulo-principal">Simplesmente Eletrônica</h1>
+            </div>
+            <div class="container-btns">
+                <nav class="nav-btn">
+                    <ul class="list-btn">
+                        <li class="item-btn"><a href="../../../index.html" class="btn-site">Página Inicial</a></li>
+                        <li class="item-btn"><a href="../../calculadora.html" class="btn-site">Calculadora</a></li>
+                        <li class="item-btn"><a href="./reti_control_semicontrol.html" class="btn-site">Próximo Retificador</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main class="container-main">
+        <section class="conteudo">
+            <div class="container-search"></div>
+            <div class="container-pages">
+                <div class="page">
+                    <div class="base-conteudo">
+                        <h2 class="text-conteudo-title">Retificador de Onda Completa em Ponte</h2>
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Os SCRs do retificador de onda completa em ponte são controlados e disparados em pares, com um ângulo de retardo igual a (alpha), resultando na formação de uma onda completa de corrente e tensão, conforme representado nas figuras abaixo.
+                        </p>
+                        <img src="../../../img/pag-inicial/reti_mono-control/em-control-ponte1.png" class="img-text" alt="Retificador de Onda Completa em Ponte">
+                        <img src="../../../img/pag-inicial/reti_mono-control/em-control-ponte2.png" class="img-text" alt="Retificador de Onda Completa em Ponte">
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Com carga indutiva, a corrente na carga tende a persistir, uma vez que o indutor induz uma tensão oposta ao aumento ou diminuição da corrente, fazendo com que os SCRs continuem conduzindo mesmo quando a tensão tenha caído para zero. Nesse cenário, a corrente continua a ser conduzida, mesmo quando os SCRs têm sua tensão invertida.
+                        </p>
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Se a indutância for baixa ou o ângulo de retardo (alpha) for mantido alto, a corrente de saída DC atingirá zero a cada semiciclo, resultando em uma situação na qual nenhum dos SCRs conduz, caracterizando uma corrente não contínua.
+                        </p>
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Se a indutância for maior ou se (alpha) for menor, a corrente de carga não poderá atingir zero e continuará conduzindo de maneira contínua.
+                        </p>
+                        <img src="../../../img/pag-inicial/reti_mono-control/em-control-ponte3.png" class="img-text" alt="Retificador de Onda Completa em Ponte">
+                        <img src="../../../img/pag-inicial/reti_mono-control/em-control-ponte4.png" class="img-text" alt="Retificador de Onda Completa em Ponte">
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Durante o semiciclo positivo, SCR1 e SCR4 conduzem, enquanto SCR2 e SCR3 estão inversamente polarizados. Durante a inversão da polarização para que SCR1 e SCR4 desliguem, a corrente da carga flui da mesma maneira até o acionamento dos SCR2 e SCR3.
+                        </p>
+                        <img src="../../../img/pag-inicial/reti_mono-control/em-control-ponte5.png" class="img-text" alt="Retificador de Onda Completa em Ponte">
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Uma das características desse modelo é a sua capacidade de 'operação em dois quadrantes', permitindo que a carga varie entre potência de carga DC e AC, sendo denominado de 'conversor completo'.
+                        </p>
+                        <img src="../../../img/pag-inicial/reti_mono-control/em-control-ponte6.png" class="img-text" alt="Retificador de Onda Completa em Ponte">
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Se um diodo de retorno for conectado em paralelo com a carga, o circuito poderá operar apenas como retificador, pois o diodo inibirá valores negativos e adicionará uma rota extra para o fluxo de corrente na carga, com três opções possíveis: SCR1 e SCR4, SCR2 e SCR3, e o diodo D.
+                        </p>
+                        <p class="text-conteudo-page">
+                            &emsp;&emsp;Devido ao diodo adicional, quando o diodo D estiver diretamente polarizado com tensões negativas, a tensão de carga será
+                        </p>
+                        <img src="../../../img/pag-inicial/reti_mono-control/em-control-ponte7.png" class="img-text" alt="Retificador de Onda Completa em Ponte">
+                        <img src="../../../img/pag-inicial/reti_mono-control/em-control-ponte8.png" class="img-text" alt="Retificador de Onda Completa em Ponte">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p class="text-footer"><span class="copy">&copy;</span> Simplesmente Eletrônica</p>
+    </footer>
+</body>
+</html>

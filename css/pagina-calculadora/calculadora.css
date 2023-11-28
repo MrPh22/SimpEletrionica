@@ -1,0 +1,245 @@
+/* Definição da largura dos botões do cabeçalho */
+.item-btn {
+    width: 512px;
+}
+
+/* Estilização do conteúdo da página principal*/
+.conteudo {
+    margin-top: 1rem;
+    min-height: 62.5vh;
+}
+
+/* Elementos Subscritos */
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+/* Estilização das barras de escolha de cálculos */
+.selecao-calc {
+    width: 58.4375rem;
+    height: 2.5625rem;
+    
+    border-radius: 3rem;
+    border: 2px solid var(--borda-barra);
+
+    font-family: var(--font-titulos);
+    font-weight: 800;
+    font-size: 1.25rem;
+
+    text-align: center;
+
+    margin-bottom: 1rem;
+}
+
+.seleca-tipo {
+    width: 28.875rem;
+    height: 2.5625rem;
+
+    border-radius: 3rem;
+    border: 2px solid var(--borda-barra);
+
+    font-family: var(--font-titulos);
+    font-weight: 800;
+    font-size: 1.25rem;
+
+    text-align: center;
+
+    margin-bottom: 1rem;
+}
+
+.dados {
+    width: 64rem;
+    
+    border: 2px solid var(--borda-preto);
+    background-color: var(--bg-search);
+
+    margin: 1rem;
+    padding: 2rem 0;
+}
+
+.select-valor {
+    font-family: var(--font-titulos);
+    font-weight: 800;
+    font-size: 1.25rem;
+
+    text-align: center;
+    
+    margin-bottom: 1.5rem;
+}
+
+.aparece-valor-mono-ncon {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.checkbox-dado {
+    width: 5rem;
+    height: 2.5rem;
+
+    border-radius: 3rem;
+    border: 2px solid var(--borda-preto);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.check-dado {
+    width: 1.25rem;
+}
+
+.tipo-valor {
+    font-family: var(--font-titulos);
+    font-weight: 800;
+    font-size: 1.25rem;
+}
+
+.aparece-input-valor{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    margin-top: 1rem;
+}
+
+.input-valor {
+    width: 11rem;
+    height: 2.5625rem;
+
+    display: flex;
+    
+    padding: 1rem;
+
+}
+
+.tipo-dado {
+    border-radius: 3rem 0rem 0rem 3rem;
+    border: 2px solid var(--borda-preto);
+
+    font-family: var(--font-titulos);
+    font-weight: 800;
+    font-size: 1.25rem;
+
+    color: var(--texto-verde);
+
+    width: 3.75rem;
+    height: 2.625rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 0.75rem;    
+}
+
+.tipo-dado sub {
+    position: relative;
+    top: 0.5rem;
+}
+
+.valor {
+    width: 5.5625rem;
+    height: 2.5rem;
+
+    border-radius: 0rem 3rem 3rem 0rem;
+    border: 2px solid var(--borda-preto);
+
+    font-family: var(--font-titulos);
+    font-weight: 800;
+    font-size: 1.25rem;
+}
+
+.btn-calcula {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-envia-dado {
+    width: 13.125rem;
+    height: 3.375rem;
+
+    text-align: center;
+
+    border-radius: 1.6875rem;
+    border: 4px solid var(--borda-btn-calcular);
+
+    background-color: var(--btn-calcular);
+
+    font-family: var(--font-titulos);
+    font-weight: 800;
+    font-size: 1.25rem;
+
+    transition: all 150ms;
+}
+
+.btn-envia-dado:hover {
+    background-color: var(--borda-btn-calcular);
+    cursor: pointer;
+    color: var(--texto-branco);
+}
+
+.div-resultado {
+    width: 64rem;
+    
+    border: 2px solid var(--borda-preto);
+    background-color: var(--bg-search);
+
+    margin: 1rem;
+    padding: 2rem 0;
+}
+
+.aparece-resultado {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.aparece-resultado p {
+    display: flex;
+    align-items: center;
+
+    border-radius: 3rem;
+    border: 2px solid var(--borda-preto);
+    
+    margin: 1rem;
+}
+
+.aparece-resultado p, math{
+    font-family: var(--font-textos);
+    font-weight: 400;
+    font-size: 1.5rem;
+
+    display: flex;
+    align-items: center;
+    
+    padding: 0 1rem;
+}
+
+.aparece-resultado mi {
+    display: flex;
+    justify-content: center;
+}
+
+.aparece-resultado sub {
+    position: relative;
+    top: 0.5rem;
+}
+
+.resultado-size {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    padding: 1rem;
+    
+}
+
+.p-height {
+    height: 4rem;
+    
+}

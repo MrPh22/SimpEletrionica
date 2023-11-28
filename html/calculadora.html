@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/pagina-calculadora/calculadora.css">
+    <link rel="stylesheet" href="../css/pagina-calculadora/calculadora-responsivo.css">
+</head>
+<body>
+    <header class="container-cabecalho">
+        <section class="cabecalho">
+            <div class="container-cabecalho">
+                <h1 class="titulo-principal">Simplesmente Eletrônica</h1>
+            </div>
+            <div class="container-btns">
+                <nav class="nav-btn">
+                    <ul class="list-btn">
+                        <li class="item-btn"><a href="../index.html" class="btn-site">Página Inicial</a></li>
+                        <li class="item-btn"><a href="./quem-somos.html" class="btn-site">Quem Somos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main class="container-main">
+        <section class="conteudo">
+            <div class="chose-calc">
+                <select name="" id="selecao-calc" class="selecao-calc" value="">
+                    <option value="default" class="opc-calc" id="">Selecione o Cálculo</option>
+                    <option value="MonoNControl" class="opc-calc" id="opc-mononcontrol">Retificador Monofásico Não Controlado</option>
+                    <option value="TriNControl3" class="opc-calc" id="opc-trincontrol3">Retificador Trifásico Não Controlado de 3 Pulsos</option>
+                    <option value="TriNControl6" class="opc-calc" id="opc-trincontrol6">Retificador Trifásico Não Controlado de 6 Pulsos</option>
+                    <option value="MonoControl" class="opc-calc" id="opc-monocontrol">Retificador Monofásico Controlado SCR</option>
+                </select>
+            </div>
+            <div class="chose-calc">
+                <select name="" id="selecao-onda-nocontrol" class="selecao-calc">
+                    <option value="default" class="opc-onda">Tipo de Onda</option>
+                    <option value="meia" class="opc-onda">Meia Onda</option>
+                    <option value="ponte" class="opc-onda">Onda Completa em Ponte</option>
+                    <option value="ct" class="opc-onda">Onda Completa com CT</option>
+                </select>
+            </div>
+            <div class="chose-calc">
+                <select name="" id="selecao-onda-scr" class="selecao-calc">
+                    <option value="default" class="opc-onda">Tipo de Onda</option>
+                    <option value="meia" class="opc-onda">Meia Onda</option>
+                    <option value="dv" class="opc-onda">Onda Completa com Derivação Completa</option>
+                    <option value="compPonte" class="opc-onda">Onda Completa em Ponte</option>
+                </select>
+            </div>
+            <div class="tipo-onda">
+                <select name="" id="seleca-tipo-mono-no-control-meia" class="selecao-calc">
+                    <option value="default" class="opc-tipo">Modelo</option>
+                    <option value="ideal" class="opc-tipo">Ideal</option>
+                    <option value="quase" class="opc-tipo">Quase Ideal</option>
+                </select>
+            </div>
+            <div class="tipo-onda">
+                <select name="" id="seleca-tipo-mono-no-control-comp" class="selecao-calc">
+                    <option value="default" class="opc-tipo">Modelo</option>
+                    <option value="ideal" class="opc-tipo">Ideal</option>
+                    <option value="quase" class="opc-tipo">Quase Ideal</option>
+                </select>
+            </div>
+            <div class="tipo-onda">
+                <select name="" id="seleca-tipo-mono-no-control-ct" class="selecao-calc">
+                    <option value="default" class="opc-tipo">Modelo</option>
+                    <option value="ideal" class="opc-tipo">Ideal</option>
+                    <option value="quase" class="opc-tipo">Quase Ideal</option>
+                </select>
+            </div>
+            <div class="chose-calc">
+                <select name="" id="selecao-calc-mono-no-control-meia-quase" class="selecao-calc">
+                    <option value="default" class="opc-calc">Selecione Qual Componente Deseja Calcular</option>
+                    <option value="vlp" class="opc-calc">VLP</option>
+                    <option value="v2p" class="opc-calc">V2P</option>
+                    <option value="vy" class="opc-calc">VY</option>
+                    <option value="ilp" class="opc-calc">ILP</option>
+                    <option value="vlrms" class="opc-calc">VLRMS</option>
+                    <option value="ilrms" class="opc-calc">ILRMS</option>
+                </select>
+            </div>
+            <div class="chose-calc">
+                <select id="selecao-calc-mono-no-control-comp-ideal" class="selecao-calc">
+                    <option value="default" class="opc-calc">Selecione Qual Componente Deseja Calcular</option>
+                    <option value="vlp" class="opc-calc">VLP</option>
+                    <option value="ilp" class="opc-calc">ILP</option>
+                    <option value="vlm" class="opc-calc">VLM</option>
+                    <option value="ilm" class="opc-calc">ILM</option>
+                </select>
+            </div>
+            <div class="chose-calc">
+                <select name="" id="selecao-calc-mono-no-control-comp-quase" class="selecao-calc">
+                    <option value="default" class="opc-calc">Selecione Qual Componente Deseja Calcular</option>
+                    <option value="vlp" class="opc-calc">VLP</option>
+                    <option value="v2p" class="opc-calc">V2P</option>
+                    <option value="vy" class="opc-calc">VY</option>
+                    <option value="ilp" class="opc-calc">ILP</option>
+                    <option value="vlrms" class="opc-calc">VLRMS</option>
+                    <option value="ilrms" class="opc-calc">ILRMS</option>
+                </select>
+            </div>
+            <div class="chose-calc">
+                <select name="" id="selecao-calc-mono-no-control-ct-ideal" class="selecao-calc">
+                    <option value="default" class="opc-calc">Selecione Qual Componente Deseja Calcular</option>
+                    <option value="vlp" class="opc-calc">VLP</option>
+                    <option value="v2p" class="opc-calc">V2P</option>
+                    <option value="ilp" class="opc-calc">ILP</option>
+                    <option value="vlm" class="opc-calc">VLM</option>
+                    <option value="ilm" class="opc-calc">ILM</option>
+                </select>
+            </div>
+            <div class="chose-calc">
+                <select name="" id="selecao-calc-mono-no-control-ct-quase" class="selecao-calc">
+                    <option value="default" class="opc-calc">Selecione Qual Componente Deseja Calcular</option>
+                    <option value="vlp" class="opc-calc">VLP</option>
+                    <option value="v2p" class="opc-calc">V2P</option>
+                    <option value="vy" class="opc-calc">VY</option>
+                    <option value="ilp" class="opc-calc">ILP</option>
+                    <option value="vlrms" class="opc-calc">VLRMS</option>
+                    <option value="ilrms" class="opc-calc">ILRMS</option>
+                </select>
+            </div>
+            <div class="chose-calc">
+                <select name="" id="selecao-calc-tri3-no-control" class="selecao-calc">
+                    <option value="default" class="opc-calc">Selecione Qual Componente Deseja Calcular</option>
+                    <option value="fc" class="opc-calc">FC</option>
+                    <option value="v0" class="opc-calc">V0(AVG)</option>
+                    <option value="i0a" class="opc-calc">I0(AVG)</option>
+                    <option value="im" class="opc-calc">IM</option>
+                    <option value="vm" class="opc-calc">VM</option>
+                    <option value="r" class="opc-calc">R</option>
+                    <option value="id" class="opc-calc">ID(AVG)</option>
+                    <option value="i0r" class="opc-calc">I0(RMS)</option>
+                    <option value="rf" class="opc-calc">RF</option>
+                    <option value="ff" class="opc-calc">FF</option>
+                </select>
+            </div>
+            <div class="chose-calc">
+                <select name="" id="selecao-calc-tri6-no-control" class="selecao-calc">
+                    <option value="default" class="opc-calc">Selecione Qual Componente Deseja Calcular</option>
+                    <option value="fc" class="opc-calc">FC</option>
+                    <option value="v0" class="opc-calc">V0(AVG)</option>
+                    <option value="i0" class="opc-calc">I0(AVG)</option>
+                    <option value="ida" class="opc-calc">ID(AVG)</option>
+                    <option value="idr" class="opc-calc">ID(RMS)</option>
+                    <option value="im" class="opc-calc">IM</option>
+                    <option value="vm" class="opc-calc">VM</option>
+                    <option value="r" class="opc-calc">R</option>
+                    <option value="rf" class="opc-calc">RF</option>
+                </select>
+            </div>
+            <div class="chose-calc">
+                <select name="" id="selecao-calc-mono-meia" class="selecao-calc"> 
+                    <option value="default" class="opc-calc">Selecione Qual Componente Deseja Calcular</option>
+                    <option value="vm" class="opc-calc">VM</option>
+                    <option value="v0" class="opc-calc">V0(AVG)</option>
+                    <option value="pl" class="opc-calc">PL</option>
+                    <option value="im" class="opc-calc">IM</option>
+                    <option value="r" class="opc-calc">R</option>
+                    <option value="irms" class="opc-calc">IRMS</option>
+                    <option value="i0" class="opc-calc">I0(AVG)</option>
+                    <option value="o" class="opc-calc">&theta;</option>
+                    <option value="s" class="opc-calc">S</option>
+                    <option value="pf" class="opc-calc">PF</option>
+                    <option value="alfa" class="opc-calc">&#9082;</option>
+                </select>
+            </div>
+            <div class="chose-calc">
+                <select name="" id="selecao-calc-mono-comp" class="selecao-calc">
+                    <option value="default" class="opc-calc">Selecione Qual Componente Deseja Calcular</option>
+                    <option value="v0" class="opc-calc">V0(AVG)</option>
+                    <option value="i0a" class="opc-calc">I0(AVG)</option>
+                    <option value="i0r" class="opc-calc">IRMS</option>
+                    <option value="alfa" class="opc-calc">&#9082;</option>
+                </select>
+            </div>
+            <div class="chose-calc">
+                <select name="" id="selecao-calc-mono-dv" class="selecao-calc">
+                    <option value="default" class="opc-calc">Selecione Qual Componente Deseja Calcular</option>
+                    <option value="v0" class="opc-calc">V0(AVG)</option>
+                    <option value="irms" class="opc-calc">IRMS</option>
+                    <option value="alfa" class="opc-calc">&#9082;</option>
+                </select>
+            </div>
+            <div class="dados" id="dados">
+                <h2 class="select-valor" id="select-title-meia-ideal">Selecione valores que já tens e posteriormente os preencha</h2>
+                <form id="form-mono-no-control-meia-ideal">
+                    <div class="aparece-valor-mono-ncon" id="aparece-valor-mono-ncon">
+                        <div class="checkbox-dado">
+                            <input type="checkbox" name="check" id="vlp-check" class="check-dado">
+                                <label for="vlp-check" class="tipo-valor">V<sub>LP</sub></label>
+                            </input>
+                        </div>
+                        <div class="checkbox-dado">
+                            <input type="checkbox" name="check" id="v2p-check" class="check-dado">
+                                <label for="v2p-check" class="tipo-valor">V<sub>2P</sub></label>
+                            </input>
+                        </div>
+                        <div class="checkbox-dado">
+                            <input type="checkbox" name="check" id="ilp-check" class="check-dado">
+                                <label for="ilp-check" class="tipo-valor">I<sub>LP</sub></label>
+                            </input>
+                        </div>
+                        <div class="checkbox-dado" id="div-vlm">
+                            <input type="checkbox" name="check" id="vlm-check" class="check-dado">
+                                <label for="vlm-check" class="tipo-valor">V<sub>LM</sub></label>
+                            </input>
+                        </div>
+                        <div class="checkbox-dado">
+                            <input type="checkbox" name="check" id="rl-check" class="check-dado">
+                                <label for="rl-check" class="tipo-valor">R<sub>L</sub></label>
+                            </input>
+                        </div>
+                        <div class="checkbox-dado" id="div-ilm">    
+                            <input type="checkbox" name="check" id="ilm-check" class="check-dado">
+                                <label for="ilm-check" class="tipo-valor">I<sub>LM</sub></label>
+                            </input>
+                        </div>
+                    </div>
+                    <div class="aparece-input-valor" id="aparece-input-valor">
+                        <div class="input-valor" id="input-vlp">
+                            <label for="vlp-txt" class="tipo-dado">V<sub>LP</sub> =</label>
+                            <input type="number" name="" id="vlp-txt" class="valor" step="0.0010">
+                        </div>
+                        <div class="input-valor" id="input-v2p"> 
+                            <label for="v2p-txt" class="tipo-dado">V<sub>2P</sub> =</label>
+                            <input type="number" name="" id="v2p-txt" class="valor" step="0.0010">
+                        </div> 
+                        <div class="input-valor" id="input-ilp">
+                            <label for="ilp-txt" class="tipo-dado">I<sub>LP</sub> =</label>
+                            <input type="number" name="" id="ilp-txt" class="valor" step="0.0010">
+                        </div>
+                        <div class="input-valor" id="input-vlm">
+                            <label for="vlm-txt" class="tipo-dado">V<sub>LM</sub> =</label>
+                            <input type="number" name="" id="vlm-txt" class="valor" step="0.0010">
+                        </div>
+                        <div class="input-valor" id="input-rl">
+                            <label for="rl-txt" class="tipo-dado">R<sub>L</sub> =</label>
+                            <input type="number" name="" id="rl-txt" class="valor" step="0.0010">
+                        </div>
+                        <div class="input-valor" id="input-ilm">
+                            <label for="ilm-txt" class="tipo-dado">I<sub>LM</sub> =</label>
+                            <input type="number" name="" id="ilm-txt" class="valor" step="0.0010">
+                        </div>
+                    </div>
+                </form>
+                <form>
+                    <h2 class="select-valor" id="titulo-insira">Preencha as componentes com os valores!</h2>
+                    <div class="aparece-input-valor" id="aparece-input-mono-no-control-quase">
+                        <div class="input-valor" id="input-vlp-meia-quase">
+                            <label for="vlp-txt-new" class="tipo-dado">V<sub>LP</sub> =</label>
+                            <input type="number" name="" id="vlp-txt-new" class="valor" step="0.0010">
+                        </div>
+                        <div class="input-valor" id="input-v2p-meia-quase"> 
+                            <label for="v2p-txt-new" class="tipo-dado">V<sub>2P</sub> =</label>
+                            <input type="number" name="" id="v2p-txt-new" class="valor" step="0.0010">
+                        </div> 
+                        <div class="input-valor" id="input-ilp-meia-quase">
+                            <label for="ilp-txt-new" class="tipo-dado">I<sub>LP</sub> =</label>
+                            <input type="number" name="" id="ilp-txt-new" class="valor" step="0.0010">
+                        </div>
+                        <div class="input-valor" id="input-rl-meia-quase">
+                            <label for="rl-txt-new" class="tipo-dado">R<sub>L</sub> =</label>
+                            <input type="number" name="" id="rl-txt-new" class="valor" step="0.0010">
+                        </div>
+                        <div class="input-valor" id="input-vy-meia-quase">
+                            <label for="vy-txt" class="tipo-dado">V<sub>Y</sub> =</label>
+                            <input type="number" name="" id="vy-txt" class="valor" step="0.0010">
+                        </div>
+                        <div class="input-valor" id="input-vlrms-meia-quase">
+                            <label for="vlrms-txt" class="tipo-dado">V<sub>LRMS</sub> =</label>
+                            <input type="number" name="" id="vlrms-txt" class="valor" step="0.0010">
+                        </div>
+                        <div class="input-valor" id="input-ilrms-meia-quase">
+                            <label for="ilrms-txt" class="tipo-dado">I<sub>LRMS</sub> =</label>
+                            <input type="number" name="" id="ilrms-txt" class="valor" step="0.0010">
+                        </div>
+                        <div class="input-valor" id="input-ilm-meia-quase">
+                            <label for="ilm-txt-new" class="tipo-dado">I<sub>LM</sub> =</label>
+                            <input type="number" name="" id="ilm-txt-new" class="valor" step="0.0010">
+                        </div>
+                        <div class="input-valor" id="input-vlm-meia-quase">
+                            <label for="vlm-txt-new" class="tipo-dado">V<sub>LM</sub> =</label>
+                            <input type="number" name="" id="vlm-txt-new" class="valor" step="0.0010">
+                        </div>
+                    </div>
+                    <div class="aparece-input-valor" id="aparece-input-mono-e-tri">
+                        <div class="input-valor" id="input-fs">
+                            <label for="fs-txt" class="tipo-dado">F<sub>S</sub> =</label>
+                            <input type="number" name="" id="fs-txt" class="valor">
+                        </div>
+                        <div class="input-valor" id="input-im">
+                            <label for="im-txt" class="tipo-dado">I<sub>M</sub> =</label>
+                            <input type="number" name="" id="im-txt" class="valor">
+                        </div>
+                        <div class="input-valor" id="input-vm">
+                            <label for="vm-txt" class="tipo-dado">V<sub>M</sub> =</label>
+                            <input type="number" name="" id="vm-txt" class="valor"></div>
+                        <div class="input-valor" id="input-r">
+                            <label for="r-txt" class="tipo-dado">R =</label>
+                            <input type="number" name="" id="r-txt" class="valor">
+                        </div>
+                        <div class="input-valor" id="input-i0">
+                            <label for="i0-txt" class="tipo-dado">I<sub>0(AVG)</sub> =</label>
+                            <input type="number" name="" id="i0-txt" class="valor">
+                        </div>
+                        <div class="input-valor" id="input-vs">
+                            <label for="vs-txt" class="tipo-dado">V<sub>S</sub> =</label>
+                            <input type="number" name="" id="vs-txt" class="valor">
+                        </div>
+                        <div class="input-valor" id="input-v0">
+                            <label for="v0-txt" class="tipo-dado">V<sub>0(AVG)</sub> =</label>
+                            <input type="number" name="" id="v0-txt" class="valor">
+                        </div>
+                        <div class="input-valor" id="input-irms">
+                            <label for="irms-txt" class="tipo-dado">I<sub>RMS</sub> =</label>
+                            <input type="number" name="" id="irms-txt" class="valor">
+                        </div>
+                        <div class="input-valor" id="input-s">
+                            <label for="s-txt" class="tipo-dado">S =</label>
+                            <input type="number" name="" id="s-txt" class="valor">
+                        </div>
+                        <div class="input-valor" id="input-p">
+                            <label for="p-txt" class="tipo-dado">P =</label>
+                            <input type="number" name="" id="p-txt" class="valor">
+                        </div>
+                        <div class="input-valor" id="input-alfa">
+                            <label for="alfa-txt" class="tipo-dado">&#9082; =</label>
+                            <input type="number" name="" id="alfa-txt" class="valor">
+                        </div>
+                    </div>
+                </form>
+                <div class="btn-calcula">               
+                    <input type="submit" value="Calcular" class="btn-envia-dado" id="btn-calcula-mono-nocontrol-ideal">
+                </div>
+                <div class="btn-calcula">               
+                    <input type="submit" value="Calcular" class="btn-envia-dado" id="btn-calcula-mono-nocontrol-quase">
+                </div>
+                <div class="btn-calcula">               
+                    <input type="submit" value="Calcular" class="btn-envia-dado" id="btn-calcula-mono-nocontrol-comp-ideal">
+                </div>
+                <div class="btn-calcula">               
+                    <input type="submit" value="Calcular" class="btn-envia-dado" id="btn-calcula-mono-nocontrol-comp-quase">
+                </div>
+                <div class="btn-calcula">               
+                    <input type="submit" value="Calcular" class="btn-envia-dado" id="btn-calcula-mono-nocontrol-ct-ideal">
+                </div>
+                <div class="btn-calcula">               
+                    <input type="submit" value="Calcular" class="btn-envia-dado" id="btn-calcula-mono-nocontrol-ct-quase">
+                </div>
+                <div class="btn-calcula">               
+                    <input type="submit" value="Calcular" class="btn-envia-dado" id="btn-calcula-tri3-nocotrol">
+                </div>
+                <div class="btn-calcula">               
+                    <input type="submit" value="Calcular" class="btn-envia-dado" id="btn-calcula-tri6-nocotrol">
+                </div>
+                <div class="btn-calcula">               
+                    <input type="submit" value="Calcular" class="btn-envia-dado" id="btn-calcula-mono-meia">
+                </div>
+                <div class="btn-calcula">               
+                    <input type="submit" value="Calcular" class="btn-envia-dado" id="btn-calcula-mono-comp">
+                </div>
+                <div class="btn-calcula">               
+                    <input type="submit" value="Calcular" class="btn-envia-dado" id="btn-calcula-mono-dv">
+                </div>
+            </div>
+            <div id="resultados" class="div-resultado">
+                <h2 class="select-valor">Resultados dos cálculos feitos com os valores fornecidos</h2>
+                <div class="aparece-resultado" id="aparece-resultado"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p class="text-footer"><span class="copy">&copy;</span> Simplesmente Eletrônica</p>
+    </footer>
+    <script type="module" src="../js/chooseCalc.js"></script>
+    <script type="module" src="../js/calculdora.js"></script>
+</body>
+</html>
